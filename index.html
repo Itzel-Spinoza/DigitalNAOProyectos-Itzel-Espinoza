@@ -4,177 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <style>
-    /* Estilos CSS */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      border: none;
-      color: #fff;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    .section {
-      padding: 50px 0;
-      text-align: center;
-    }
-    #inicio {
-      background-color: #ffc0cb;
-    }
-    .content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .text {
-      max-width: 45%;
-    }
-    .text h2 {
-      margin-bottom: 20px;
-    }
-.image {
-      max-width: 45%;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 50%;
-    }
-    .testimonial-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .testimonial {
-      width: calc(33.33% - 20px);
-      margin-bottom: 20px;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-    .testimonial img {
-      max-width: 100px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-    .testimonial h3 {
-      margin-bottom: 10px;
-    }
-
-    
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .card {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 20px;
-      margin: 10px;
-      width: calc(50% - 20px);
-      box-sizing: border-box;
-    }
-
-    .form-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .form-fields {
-      width: 45%;
-      padding-right: 20px;
-    }
-    .form-image {
-      width: 45%;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    input, button {
-      margin-bottom: 10px;
-      padding: 10px;
-      width: calc(100% - 20px);
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-    }
-    .logo {
-      max-width: 100px;
-    }
-    .copyright {
-      margin-right: auto;
-    }
-    .owner-info {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .owner-info p {
-      margin: 0;
-    }
-    .social-icons {
-      display: flex;
-      gap: 10px;
-    }
-    .social-icons a {
-      color: #fff;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <h1>Logo</h1>
     <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#programa">Programa</a>
-      <a href="#testimonios">Testimonios</a>
+      <a href="#inicio">INICIO</a>
+      <a href="#programa">PROGRAMA</a>
+      <a href="#testimonios">TESTIMONIOS</a>
     </nav>
-    <button onclick="scrollToForm()">Regístrate</button>
+    <button class = "rounded-button" onclick="scrollToForm()">REGISTRATE</button>
   </header>
 
   <section id="inicio" class="section">
     <div class="content">
       <div class="text">
-        <h2>Bienvenido a nuestra página de inicio</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus libero id eros iaculis, vel varius neque rutrum.</p>
-        <button>Ver más</button>
+        <h2>EMPRENDE CON CAROLINE:</h2>
+        <h2>CURSO DE FINANZAS DIGITALES</h2>
+        <p>Convierte tus sueños en realidad.</p>
+        <button class = "rounded-button">INICIAR AHORA</button>
       </div>
       <div class="image">
         <!-- Aquí puedes incluir tu imagen SVG -->
@@ -186,15 +39,20 @@
   <!-- Otras secciones y contenido -->
   <section id="programa" class="section">
     <h2>Programa</h2>
+    <p>Este curso digital está diseñado para brindarte las herramientas y el 
+      conocimiento necesario para gestionar las finanzas de tu emprendimiento de 
+      manera efectiva y estratégica. Con una combinación de contenido teórico y práctico, 
+      te guiaremos a través de los fundamentos esenciales de las finanzas empresariales, 
+      desde la planificación presupuestaria hasta la inversión inteligente, en 8 módulos.</p>
     <div class="card-container">
-      <div class="card">Card 1</div>
-      <div class="card">Card 2</div>
-      <div class="card">Card 3</div>
-      <div class="card">Card 4</div>
-      <div class="card">Card 5</div>
-      <div class="card">Card 6</div>
-      <div class="card">Card 7</div>
-      <div class="card">Card 8</div>
+      <div class="card">Módulo 1: Fundamentos de Finanzas Empresariales</div>
+      <div class="card">Módulo 2: Planificación Financiera y Presupuesto</div>
+      <div class="card">Módulo 3: Gestión de Ingresos y Gastos</div>
+      <div class="card">Módulo 4: Estrategias de Financiamiento y Capitalización</div>
+      <div class="card">Módulo 5: Análisis de Inversiones y Rentabilidad</div>
+      <div class="card">Módulo 6: Fiscalidad Empresarial</div>
+      <div class="card">Módulo 7: Gestión de Deudas y Finanzas Personales</div>
+      <div class="card">Módulo 8: Estrategias de Crecimiento y Sostenibilidad</div>
     </div>
   </section>
 
@@ -203,35 +61,39 @@
     <div class="testimonial-container">
       <div class="testimonial">
         <img src="imagen1.jpg" alt="Imagen testimonio 1">
-        <h3>Nombre 1</h3>
-        <p>Reseña del testimonio 1.</p>
+        <h3>María Gutiérrez</h3>
+        <p>"¡El curso superó todas mis expectativas! Aprendí tanto en tan poco tiempo. 
+          Ahora me siento mucho más segura y preparada para manejar las finanzas de mi negocio. ¡Altamente recomendado!"</p>
       </div>
       <div class="testimonial">
         <img src="imagen2.jpg" alt="Imagen testimonio 2">
-        <h3>Nombre 2</h3>
-        <p>Reseña del testimonio 2.</p>
+        <h3>Carlos Martínez</h3>
+        <p>"El curso proporcionó una base sólida en finanzas empresariales. Los módulos fueron bien estructurados y fáciles de seguir. 
+          Realmente aprecio los recursos adicionales proporcionados. ¡Gracias!"</p>
       </div>
       <div class="testimonial">
         <img src="imagen3.jpg" alt="Imagen testimonio 3">
-        <h3>Nombre 3</h3>
-        <p>Reseña del testimonio 3.</p>
+        <h3>Laura Pérez</h3>
+        <p>"Este curso me ayudó a comprender aspectos financieros que antes me resultaban confusos. Los ejemplos prácticos fueron especialmente útiles. 
+          ¡Lo recomendaría a cualquier emprendedor que busque mejorar sus habilidades financieras!"</p>
       </div>
-      <!-- Añadir más testimonios si es necesario -->
     </div>
   </section>
 
   
   <section id="formulario" class="section">
-    <h2>Registro</h2>
     <div class="form-container">
       <div class="form-fields">
+        <h2>REGISTRATE AQUÍ</h2>
+        <p>"¡Únete a nuestra comunidad de emprendedores hoy mismo! Completa el formulario a continuación para acceder al curso completo. 
+          ¡Regístrate ahora y comienza a impulsar tu negocio hacia el éxito!"</p>
         <form>
           <input type="text" placeholder="Nombre" required>
           <input type="text" placeholder="Apellido Paterno" required>
           <input type="text" placeholder="Apellido Materno" required>
           <input type="email" placeholder="Correo electrónico" required>
           <input type="tel" placeholder="Número de celular" required>
-          <button type="submit">Enviar</button>
+          <button class = "rounded-button" type="submit">Enviar</button>
         </form>
       </div>
       <div class="form-image">
@@ -255,14 +117,10 @@
       <div class="social-icons">
         <a href="#"><img src="facebook_icon.png" alt="Facebook"></a>
         <a href="#"><img src="twitter_icon.png" alt="Twitter"></a>
-        <!-- Agrega más íconos de redes sociales si es necesario -->
       </div>
     </div>
   </footer>
-  <script>
-    function scrollToForm() {
-      document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' });
-    }
+  <script src = "script.js"> 
   </script>
 </body>
 </html>
