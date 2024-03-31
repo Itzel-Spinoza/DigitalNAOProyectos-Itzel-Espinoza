@@ -73,6 +73,8 @@ body {
   }
   .text h2 {
     margin-bottom: 20px;
+    color: #160747;
+    size: 100px;
   }
 .image {
     max-width: 45%;
@@ -189,7 +191,6 @@ body {
     margin: 10px;
     width: 569px;
     height: 328px;
-    /*width: calc(50% - 20px);*/
     box-sizing: border-box;
     text-align: center;
     align-items: center; /* Centra verticalmente */
@@ -227,17 +228,17 @@ body {
   }
 
   .form-container {
-    display: flex; /* Hacer que los elementos se muestren en línea */
-    align-items: center; /* Centrar verticalmente los elementos */
+    display: flex; 
+    align-items: center; 
 }
 
 .form-fields {
-    flex: 1; /* Hacer que ocupe todo el espacio disponible */
-    padding-right: 20px; /* Agregar un espacio entre los campos del formulario y la imagen */
+    flex: 1; 
+    padding-right: 20px; 
 }
 
 .form-image {
-    flex: 1; /* Hacer que ocupe todo el espacio disponible */
+    flex: 1; 
 }
 
   form {
@@ -273,26 +274,26 @@ body {
   .owner-info {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
+    align-items: center; 
   }
   
   .row {
-    margin-bottom: 10px; /* Espacio entre las filas */
+    margin-bottom: 10px; 
     display: flex;
-    align-items: center; /* Centra los elementos verticalmente */
+    align-items: center; 
     text-align: left;
   }
   
   .row p,
   .row a {
-    margin: 0; /* Elimina el margen por defecto */
+    margin: 0; 
   }
   
   .fa-solid,
   .fa-brands {
-    font-size: 24px; /* Tamaño de los iconos */
-    width: 24px; /* Ancho fijo para los iconos */
-    text-align: justify; /* Alinea el contenido del icono */
+    font-size: 24px; 
+    width: 24px; 
+    text-align: justify; 
   }
   
   .social-icons {
