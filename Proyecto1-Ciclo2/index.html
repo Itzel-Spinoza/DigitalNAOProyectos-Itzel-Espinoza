@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <!-- Incluye los estilos de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Incluye tu hoja de estilos personalizada -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Incluye la fuente de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Incluye el script de Font Awesome -->
+  <script src="https://kit.fontawesome.com/eb4727e9f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="text-white p-3 d-flex justify-content-between align-items-center">
+    <img src="1 Logo.svg" alt="Imagen" width="150" height="150">
+    <nav>
+      <a class="text-white" href="#inicio">INICIO</a>
+      <a class="text-white" href="#programa">PROGRAMA</a>
+      <a class="text-white" href="#testimonios">TESTIMONIOS</a>
+    </nav>
+    <button class="btn btn-light rounded-pill rounded-button" onclick="scrollToForm()">REGISTRAR</button>
+  </header>
+
+  <section id="inicio" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="text">
+            <h2 class="mb-3">EMPRENDE CON CAROLINE:</h2>
+            <h2 class="mb-3">CURSO DE FINANZAS DIGITALES</h2>
+            <p class="mb-4">Convierte tus sueños en realidad.</p>
+            <button class="btn btn-primary rounded-pill rounded-button">INICIAR AHORA</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image">
+            <img src="computer.svg" alt="Imagen SVG">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="programa" class="section">
+    <div class="container">
+      <h2>Programa</h2>
+      <p>Este curso digital está diseñado para brindarte las herramientas y el conocimiento necesario para gestionar las finanzas de tu emprendimiento de manera efectiva y estratégica. Con una combinación de contenido teórico y práctico, te guiaremos a través de los fundamentos esenciales de las finanzas empresariales, desde la planificación presupuestaria hasta la inversión inteligente, en 8 módulos.</p>
+      <div class="row">
+        <div id="card1" class="card col-md-6">Módulo 1: Fundamentos de Finanzas Empresariales</div>
+        <div id="card2" class="card col-md-6">Módulo 2: Planificación Financiera y Presupuesto</div>
+        <div id="card3" class="card col-md-6">Módulo 3: Gestión de Ingresos y Gastos</div>
+        <div id="card4" class="card col-md-6">Módulo 4: Estrategias de Financiamiento y Capitalización</div>
+        <div id="card5" class="card col-md-6">Módulo 5: Análisis de Inversiones y Rentabilidad</div>
+        <div id="card6" class="card col-md-6">Módulo 6: Fiscalidad Empresarial</div>
+        <div id="card7" class="card col-md-6">Módulo 7: Gestión de Deudas y Finanzas Personales</div>
+        <div id="card8" class="card col-md-6">Módulo 8: Estrategias de Crecimiento y Sostenibilidad</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios" class="section">
+    <div class="container">
+      <h2>TESTIMONIOS</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial">
+            <img src="Maria.svg" alt="Imagen testimonio 1" class="img-fluid">
+            <h3>María Gutiérrez</h3>
+            <p>"¡El curso superó todas mis expectativas! Aprendí tanto en tan poco tiempo. Ahora me siento mucho más segura y preparada para manejar las finanzas de mi negocio. ¡Altamente recomendado!"</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <img src="Carlos.svg" alt="Imagen testimonio 2" class="img-fluid">
+            <h3>Carlos Martínez</h3>
+            <p>"El curso proporcionó una base sólida en finanzas empresariales. Los módulos fueron bien estructurados y fáciles de seguir. Realmente aprecio los recursos adicionales proporcionados. ¡Gracias!"</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <img src="Laura.svg" alt="Imagen testimonio 3" class="img-fluid">
+            <h3>Laura Pérez</h3>
+            <p>"Este curso me ayudó a comprender aspectos financieros que antes me resultaban confusos. Los ejemplos prácticos fueron especialmente útiles. ¡Lo recomendaría a cualquier emprendedor que busque mejorar sus habilidades financieras!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="formulario" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-container">
+            <div class="form-fields">
+              <h2>REGISTRATE AQUÍ</h2>
+              <p>"¡Únete a nuestra comunidad de emprendedores hoy mismo! Completa el formulario a continuación para acceder al curso completo. ¡Regístrate ahora y comienza a impulsar tu negocio hacia el éxito!"</p>
+              <form class="formulario" onsubmit="return validarFormulario()">
+                <input class="form-control campos" type="text" placeholder="Nombre" required>
+                <input class="form-control campos" type="text" placeholder="Apellido Paterno" required>
+                <input class="form-control campos" type="text" placeholder="Apellido Materno" required>
+                <input id="email" class="form-control campos" type="email" placeholder="Correo electrónico" required title="Por favor, introduce una dirección de correo electrónico válida.">
+                <input class="form-control campos" type="tel" placeholder="Número de celular" required>
+                <button id="btnEnviar" class="btn btn-primary rounded-pill rounded-button" type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-image">
+            <!-- Aquí puedes incluir tu imagen -->
+            <img src="Dollars.svg" alt="Imagen" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  
+  <footer class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row align-items-center">
+            <div class="col-md-4"> <!-- Ajusta el tamaño de la columna para el logo -->
+              <img src="1 Logo.svg" alt="Imagen" width="150" height="150" class="logo">
+            </div>
+            <div class="col-md-8"> <!-- Ajusta el tamaño de la columna para el texto -->
+              <p>&copy; 2024 El contenido de este sitio está protegido por copyright </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <div class="owner-info">
+            <div class="row">
+              <p><i class="fas fa-user" style="color: #000000;"></i> Caroline Sada</p>
+            </div>
+            <div class="row">
+              <p><i class="fas fa-phone" style="color: #000000;"></i> +52 232 - 233 - 5678</p>
+            </div>
+            <div class="row">
+              <a href="#"><i class="fab fa-instagram-square" style="color: #030303;"></i><i class="fab fa-facebook-square" style="color: #000000;"></i><i class="fab fa-tiktok" style="color: #000000;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <!-- Incluye los scripts de Bootstrap y tu script personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
