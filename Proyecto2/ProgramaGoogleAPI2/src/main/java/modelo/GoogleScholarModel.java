@@ -10,10 +10,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- *
- * @author itzel
- */
 public class GoogleScholarModel {
     private final String apiKey;
 
